@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
   </head>
   <body>
-    <div class="columns">
-      <div class="column">
+    <div class="columns is-centered">
+      <div class="column is-three-fifths">
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <h1 class="is-size-2" style="font-family: 'Dosis', sans-serif;">&nbsp;Fahrrad Strutt</h1>
+            <h1 class="is-size-2" style="font-family: 'Dosis', sans-serif;">Fahrrad Strutt</h1>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
               <span aria-hidden="true"></span>
@@ -25,17 +25,20 @@
 
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item">
-                Kontakt
+              <a class="navbar-item" href="#home">
+                <i class="fas fa-home"></i><span class="is-hidden-desktop"> Home</span>
               </a>
-              <a class="navbar-item">
-                Angebote
+              <a class="navbar-item" href="#kontakt">
+                <i class="fas fa-envelope"></i><span class="is-hidden-desktop"> Kontakt</span>
               </a>
-              <a class="navbar-item">
-                Anfahrt
+              <a class="navbar-item" href="#angebote">
+                <i class="fas fa-dollar-sign"></i><span class="is-hidden-desktop"> Angebote</span>
               </a>
-              <a class="navbar-item">
-                Impressum
+              <a class="navbar-item" href="#anfahrt">
+                <i class="fas fa-map"></i><span class="is-hidden-desktop"> Anfahrt</span>
+              </a>
+              <a class="navbar-item" href="#impressum">
+                <i class="fas fa-paragraph"></i>&nbsp;Impressum
               </a>
             </div>
           </div>
@@ -43,19 +46,109 @@
       </div>
     </div>
     <div id="fullpage">
-      <div class="fpsection">
-        <div class="columns is-mobile is-centered">
-          <div class="column is-three-fifths">is-four-fifths</div>
-        </div>
-      </div>
-      <div class="fpsection">
+      <div data-anchor="home" class="fpsection">
         <div class="columns is-mobile is-centered">
           <div class="column is-three-fifths has-text-centered">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.900191123065!2d9.018519316062092!3d50.144298979434396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd3d41b2bce007%3A0x330a077ad3727603!2sFahrrad+Strutt!5e0!3m2!1sde!2sde!4v1541624468838" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="content is-medium">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+
+            <p><i class="far fa-clock"></i> Öffnungszeiten</p>
+            <div class="content">
+            <table class="table" style="width:fit-content;margin-left: auto;margin-right: auto;">
+              <tbody>
+                <tr>
+                  <th>Mo.</th>
+                  <td>9:00 - 12:30</td>
+                  <td>14:30 - 18:00</td>
+                </tr>
+                <tr>
+                  <th>Di.</th>
+                  <td>9:00 - 12:30</td>
+                  <td>14:30 - 18:00</td>
+                </tr>
+                <tr>
+                  <th>Mi.</th>
+                  <td>9:00 - 12:30</td>
+                  <td class="has-text-centered">-</td>
+                </tr>
+                <tr>
+                  <th>Do.</th>
+                  <td>9:00 - 12:30</td>
+                  <td>14:30 - 18:00</td>
+                </tr>
+                <tr>
+                  <th>Fr.</th>
+                  <td>9:00 - 12:30</td>
+                  <td>14:30 - 18:00</td>
+                </tr>
+                <tr>
+                  <th>Sa.</th>
+                  <td>9:00 - 12:30</td>
+                  <td class="has-text-centered">-</td>
+                </tr>
+              </tbody>
+            </table></div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="kontakt" class="fpsection">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-three-fifths has-text-centered">
+            <p>Kontakt</p>
+            <p>
+              <h3 class="title is-3"><i class="fas fa-phone"></i> <a href="tel:+49618450190">06184/50190</a></h3>
+            </p>
+            <p>
+              <h3 class="title is-3"><i class="far fa-envelope"></i> <a href="mailto:kontakt@fahrrad-strutt.de">kontakt@fahrrad-strutt.de</a></h3>
+            </p>
+            <p>
+              <h3 class="title is-3"><i class="fab fa-facebook-messenger"></i> <a href="https://m.me/fahrrad.strutt">fahrrad.strutt</a></h3>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="angebote" class="fpsection">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-three-fifths has-text-centered"">
+            <h2 class="title is-2"><i class="fas fa-dollar-sign"></i> Angebote</h2>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="anfahrt" class="fpsection">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-three-fifths has-text-centered">
+            <h2 class="title is-2"><i class="fas fa-map"></i> Anfahrt</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.900191123065!2d9.018519316062092!3d50.144298979434396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd3d41b2bce007%3A0x330a077ad3727603!2sFahrrad+Strutt!5e0!3m2!1sde!2sde!4v1541624468838" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="impressum" class="fpsection">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-three-fifths">
+            <h2 class="title is-2"><i class="fas fa-paragraph"></i> Impressum</h2>
+
+            <h4 class="title is-4">Angaben gem&auml;&szlig; &sect; 5 TMG</h4>
+            <p>Fahrrad-Strutt GbR<br />
+            Gartenstra&szlig;e 4<br />
+            63517 Rodenbach</p>
+            <br />
+            <p><strong>Vertreten durch die Gesellschafter:</strong><br />
+            R&uuml;diger Strutt</p>
+            <br />
+            <h4 class="title is-4">Kontakt</h4>
+            <p>Telefon: 0618450190<br />
+            Telefax: 0618450190<br />
+            E-Mail: kontakt@fahrrad-strutt.de</p>
+            <br />
+            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            <br />
+            <div class="is-small">Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></div>
           </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

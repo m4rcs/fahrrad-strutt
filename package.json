@@ -11,12 +11,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.23.1",
-    "webpack-cli": "^3.1.2",
-    "bulma": "^0.7.2"
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "bulma": "^0.7.2",
+    "fullpage.js": "^3.0.3",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.4.2",
-    "fullpage.js": "^3.0.3"
-  }
+  "dependencies": {}
 }
