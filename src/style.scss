@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+// Fullpage css
+@import "~fullpage.js/dist/fullpage.css";
+
+// Font for logo
+@import url('https://fonts.googleapis.com/css?family=Dosis:300');
+
+// Setup fontawesome
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+// Customize Bulma
+@import "~bulma/bulma";
