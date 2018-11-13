@@ -7,6 +7,11 @@ module.exports = {
     filename: 'app.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
   module: {
     rules: [{
       test: /\.scss$/,
