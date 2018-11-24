@@ -21,3 +21,8 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~bulma/sass/elements/content";
 @import "~bulma/sass/elements/table";
 @import "~bulma/sass/elements/title";
+
+// Own styles
+body {
+  margin: $size-7 !important;
+}
