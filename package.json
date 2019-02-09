@@ -5,26 +5,26 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
+    "build": "NODE_ENV=production webpack --mode production",
     "build:dev": "webpack --mode development",
-    "deploy": "npm run build && scp -r dist/* mail.schiller.im:/var/www/beta.fahrrad-strutt.de/",
+    "deploy": "NODE_ENV=production npm run build && scp -r dist/* mail.schiller.im:/var/www/beta.fahrrad-strutt.de/",
     "server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.3",
-    "bulma": "^0.7.2",
+    "@fortawesome/fontawesome-free": "^5.7.1",
+    "bulma": "^0.7.4",
     "css-loader": "^2.1.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^3.0.1",
     "fullpage.js": "^3.0.4",
+    "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {}

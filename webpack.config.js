@@ -1,5 +1,6 @@
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   entry: './src/app.js',
@@ -15,14 +16,12 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.scss$/,
-      use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: [
-          'css-loader',
-          'sass-loader'
-        ]
-      })
+      test: /\.(sa|sc|c)ss$/,
+      use: [
+        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+        'css-loader',
+        'sass-loader',
+      ],
     }, {
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       use: [{
@@ -35,6 +34,9 @@ module.exports = {
     }]
   },
   plugins: [
-    new ExtractTextPlugin('style.css'),
-  ]
+    new MiniCssExtractPlugin({
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+    })
+  ],
 };
