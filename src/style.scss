@@ -14,10 +14,12 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 // Customize Bulma
+$hr-margin: 1rem 0;
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/grid/columns";
 @import "~bulma/sass/components/navbar";
+@import "~bulma/sass/elements/button";
 @import "~bulma/sass/elements/content";
 @import "~bulma/sass/elements/table";
 @import "~bulma/sass/elements/title";
