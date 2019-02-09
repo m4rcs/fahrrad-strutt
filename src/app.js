@@ -6,7 +6,7 @@ import fullpage from 'fullpage.js/dist/fullpage.extensions.min'
 
 new fullpage('#fullpage', {
   scrollHorizontally: true,
-  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  licenseKey: '2r2oF0TJ-V2mGnzfR-R6EUUmgX-tSZEpvMO',
   sectionSelector: '.fpsection'
 });
 
