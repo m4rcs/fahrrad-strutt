@@ -28,3 +28,21 @@ $hr-margin: 1rem 0;
 body {
   margin: $size-7 !important;
 }
+
+// Map and FB styles
+#map-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#fb-iframe {
+  height: 100%;
+}
+
+.three-quaters-height {
+  height: 75%;
+}
+
+.full-height {
+  height: 100%;
+}
