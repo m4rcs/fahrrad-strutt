@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  mode: devMode ? 'development' : 'production',
   entry: './src/app.js',
   output: {
     filename: 'app.js',
@@ -16,6 +15,11 @@ module.exports = {
     port: 9000,
     watchContentBase: true
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    })
+  ],
   module: {
     rules: [{
       test: /\.(sa|sc|c)ss$/,
@@ -34,11 +38,5 @@ module.exports = {
         }
       }]
     }]
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    })
-  ],
+  }
 };
