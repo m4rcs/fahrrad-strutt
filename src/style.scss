@@ -3,8 +3,8 @@
 // Fullpage css
 @import "~fullpage.js/dist/fullpage.css";
 
-// Font for logo
-@import url('https://fonts.googleapis.com/css?family=Dosis:300');
+// Font for logo + text
+@import url('https://fonts.googleapis.com/css?family=Lato|Rubik');
 
 // Setup fontawesome
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
@@ -27,6 +27,12 @@ $hr-margin: 1rem 0;
 // Own styles
 body {
   margin: $size-7 !important;
+  font-family: 'Rubik', sans-serif;
+}
+
+// Font for heading
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
 }
 
 // Map and FB styles
