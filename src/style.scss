@@ -7,11 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Rubik');
 
 // Setup fontawesome
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/regular";
-@import "~@fortawesome/fontawesome-free/scss/brands";
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 
 // Customize Bulma
 $hr-margin: 1rem 0;
