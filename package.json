@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "bulma": "^0.7.5",
-    "css-loader": "^2.1.1",
+    "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "fullpage.js": "^3.0.7",
     "mini-css-extract-plugin": "^0.8.0",
