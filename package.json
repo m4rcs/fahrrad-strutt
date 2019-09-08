@@ -20,10 +20,10 @@
     "fullpage.js": "^3.0.7",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
-    "sass-loader": "^7.3.1",
+    "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7",
+    "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {}
