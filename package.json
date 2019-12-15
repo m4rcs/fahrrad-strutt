@@ -16,7 +16,7 @@
   "devDependencies": {
     "bulma": "^0.8.0",
     "css-loader": "^3.2.0",
-    "file-loader": "^4.2.0",
+    "file-loader": "^5.0.2",
     "fullpage.js": "^3.0.7",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
