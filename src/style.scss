@@ -1,20 +1,15 @@
 @charset "utf-8";
-
 // Fullpage css
 @import "~fullpage.js/dist/fullpage.css";
-
 // Font for logo + text
 @import url('https://fonts.googleapis.com/css?family=Lato|Rubik');
-
 // Setup fontawesome
-@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
-
+@import url('https://use.fontawesome.com/releases/v5.13.0/css/all.css');
 // Customize Bulma
 $hr-margin: 0;
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/grid/columns";
-
 // Change navbar breakpoint
 $navbar-breakpoint: $tablet;
 @import "~bulma/sass/components/navbar";
@@ -22,36 +17,40 @@ $navbar-breakpoint: $tablet;
 @import "~bulma/sass/elements/content";
 @import "~bulma/sass/elements/table";
 @import "~bulma/sass/elements/title";
-
 // Own styles
 body {
-  margin: $size-7 !important;
-  font-family: 'Rubik', sans-serif;
+    margin: $size-7 !important;
+    font-family: 'Rubik', sans-serif;
 }
 
 // Font for heading
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
 }
 
 // Map and FB styles
 #map-iframe {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #fb-iframe {
-  height: 100%;
+    height: 100%;
 }
 
 .three-quaters-height {
-  height: 75%;
+    height: 75%;
 }
 
 .full-height {
-  height: 100%;
+    height: 100%;
 }
 
 span.button {
-  margin: 1rem;
+    margin: 1rem;
 }
