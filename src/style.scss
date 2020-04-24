@@ -17,6 +17,9 @@ $navbar-breakpoint: $tablet;
 @import "~bulma/sass/elements/content";
 @import "~bulma/sass/elements/table";
 @import "~bulma/sass/elements/title";
+
+@import "~bulma-block-list/src/block-list";
+
 // Own styles
 body {
     margin: $size-7 !important;
@@ -73,8 +76,20 @@ figure img:hover {
 }
 
 .gallery {
-    background-color: $grey-lightest;
+    background-color: $grey-lighter;
     border-radius: $size-6;
     padding: $size-4;
     margin: $size-7;
+}
+
+.is-90 {
+    max-width: 90%;
+}
+
+.is-80 {
+    max-width: 80%;
+}
+
+.is-50 {
+    max-width: 50%;
 }
