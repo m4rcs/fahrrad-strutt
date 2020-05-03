@@ -17,9 +17,7 @@ $navbar-breakpoint: $tablet;
 @import "~bulma/sass/elements/content";
 @import "~bulma/sass/elements/table";
 @import "~bulma/sass/elements/title";
-
 @import "~bulma-block-list/src/block-list";
-
 // Own styles
 body {
     margin: $size-7 !important;
@@ -47,7 +45,7 @@ h6 {
 }
 
 #opening-table {
-    width:auto;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -65,14 +63,18 @@ span.button {
 }
 
 figure img {
-    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(100%); /* FF 35+ */
+    -webkit-filter: grayscale(100%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%);
+    /* FF 35+ */
 }
 
 figure img:hover {
     transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(0%); /* FF 35+ */
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+    /* FF 35+ */
 }
 
 .gallery {
@@ -92,4 +94,42 @@ figure img:hover {
 
 .is-50 {
     max-width: 50%;
+}
+
+.icon-menu {
+    max-width: 16px;
+    -webkit-filter: grayscale(100%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%);
+    /* FF 35+ */
+}
+
+.icon-menu:hover {
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+    /* FF 35+ */
+}
+
+.img-title {
+    max-height: 3rem;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
