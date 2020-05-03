@@ -1,31 +1,31 @@
 {
-  "name": "fahrrad-strutt.de",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production webpack --mode production",
-    "build:dev": "webpack --mode development",
-    "deploy": "NODE_ENV=production npm run build && scp -r dist/* mail.schiller.im:/var/www/beta.fahrrad-strutt.de/",
-    "server": "webpack-dev-server"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "bulma": "^0.8.2",
-    "bulma-block-list": "^0.3.0",
-    "css-loader": "^3.5.3",
-    "file-loader": "^6.0.0",
-    "fullpage.js": "^3.0.8",
-    "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.14.0",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.2.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
-  },
-  "dependencies": {}
+    "name": "fahrrad-strutt.de",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "NODE_ENV=production webpack --mode production",
+        "build:dev": "webpack --mode development",
+        "deploy": "NODE_ENV=production npm run build && scp -r dist/* mail.schiller.im:/var/www/beta.fahrrad-strutt.de/",
+        "server": "webpack-dev-server"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "bulma": "^0.8.2",
+        "bulma-block-list": "^0.3.0",
+        "css-loader": "^3.5.3",
+        "file-loader": "^6.0.0",
+        "fullpage.js": "^3.0.8",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.14.0",
+        "sass-loader": "^8.0.2",
+        "style-loader": "^1.2.1",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    },
+    "dependencies": {}
 }
