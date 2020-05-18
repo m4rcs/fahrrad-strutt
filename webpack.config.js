@@ -6,10 +6,10 @@ module.exports = {
   entry: './src/app.js',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'public')
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'public'),
     compress: true,
     host: '0.0.0.0',
     port: 9000,

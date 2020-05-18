@@ -9,7 +9,7 @@ pages:
     - yarn build
   artifacts:
     paths:
-      - dist/
+      - public/
   only:
     - master
 
@@ -18,6 +18,6 @@ test:
     - yarn build:dev
   artifacts:
     paths:
-      - dist/
+      - public/
   except:
     - master
