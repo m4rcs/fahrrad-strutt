@@ -16,5 +16,8 @@ pages:
 test:
   script:
     - yarn build:dev
+  artifacts:
+    paths:
+      - dist/
   except:
     - master
