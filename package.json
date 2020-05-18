@@ -7,7 +7,6 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "NODE_ENV=production webpack --mode production",
         "build:dev": "webpack --mode development",
-        "deploy": "NODE_ENV=production npm run build && scp -r dist/* mail.schiller.im:/var/www/beta.fahrrad-strutt.de/",
         "server": "webpack-dev-server"
     },
     "keywords": [],
