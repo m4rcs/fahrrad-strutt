@@ -1,14 +1,20 @@
 image: alpine
 
 before_script:
-  - apk update && apk add yarn
+  - apk add --no-cache yarn
+  - test -e yarn.lock && yarn
 
 pages:
-  stage: deploy
   script:
     - yarn build
   artifacts:
     paths:
       - dist/
   only:
+    - master
+
+test:
+  script:
+    - yarn build:dev
+  except:
     - master
