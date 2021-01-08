@@ -1,33 +1,36 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const devMode = process.env.NODE_ENV !== 'production'
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: './src/app.js',
+  mode: devMode ? "development" : "production",
+  entry: "./src/app.js",
   output: {
-    filename: 'app.js',
-    path: path.resolve(__dirname, 'public')
+    filename: "app.js",
+    path: path.resolve(__dirname, "public"),
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, "public"),
     compress: true,
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     port: 9000,
-    watchContentBase: true
+    watchContentBase: true,
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-    })
+      filename: "[name].css",
+    }),
   ],
   module: {
-    rules: [{
-      test: /\.(sa|sc|c)ss$/,
-      use: [
-        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-        'css-loader',
-        'sass-loader',
-      ],
-    }]
-  }
+    rules: [
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ],
+      },
+    ],
+  },
 };
