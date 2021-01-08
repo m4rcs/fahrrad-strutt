@@ -10,11 +10,10 @@ module.exports = {
     path: path.resolve(__dirname, "public"),
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "public"),
     compress: true,
     host: "0.0.0.0",
     port: 9000,
-    watchContentBase: true,
+    static: [path.resolve(__dirname, "public")],
   },
   plugins: [
     new MiniCssExtractPlugin({
