@@ -6,7 +6,7 @@ module.exports = {
   mode: devMode ? "development" : "production",
   entry: "./src/app.js",
   output: {
-    filename: "app.js",
+    filename: "scripts/app.js",
     path: path.resolve(__dirname, "public"),
     publicPath: "",
   },
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "styles/[name].css",
     }),
   ],
   module: {
