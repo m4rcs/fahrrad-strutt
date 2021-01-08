@@ -8,6 +8,7 @@ module.exports = {
   output: {
     filename: "app.js",
     path: path.resolve(__dirname, "public"),
+    publicPath: "",
   },
   devServer: {
     compress: true,
@@ -29,6 +30,11 @@ module.exports = {
           "css-loader",
           "sass-loader",
         ],
+      },
+      {
+        test: /\.(woff|woff2)$/,
+        loader: "file-loader",
+        options: { name: "fonts/[name].[ext]" },
       },
     ],
   },
