@@ -1,17 +1,23 @@
 @charset "utf-8";
 // Fullpage css
 @import "~fullpage.js/dist/fullpage.css";
+
 // Font for logo + text
 @import "~@fontsource/lato/index.css";
 @import "~@fontsource/rubik/index.css";
+
 // Setup fontawesome
-@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
 // Customize Bulma
 $hr-margin: 0;
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/helpers/_all.sass";
 @import "~bulma/sass/grid/columns";
+
 // Change navbar breakpoint
 $navbar-breakpoint: $tablet;
 @import "~bulma/sass/components/navbar";
@@ -20,6 +26,7 @@ $navbar-breakpoint: $tablet;
 @import "~bulma/sass/elements/table";
 @import "~bulma/sass/elements/title";
 @import "~bulma-block-list/src/block-list";
+
 // Own styles
 body {
   margin: $size-7 !important;
