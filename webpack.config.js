@@ -6,8 +6,8 @@ module.exports = {
   mode: devMode ? "development" : "production",
   entry: "./src/app.js",
   output: {
-    filename: "scripts/app.js",
-    path: path.resolve(__dirname, "public"),
+    filename: "app.js",
+    path: path.resolve(__dirname, "public/assets"),
     publicPath: "",
   },
   devServer: {
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles/[name].css",
+      filename: "[name].css",
     }),
   ],
   module: {
