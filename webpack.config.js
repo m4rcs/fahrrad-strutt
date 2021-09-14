@@ -1,7 +1,7 @@
 const path = require("path");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const devMode = process.env.NODE_ENV !== "production";
 
@@ -19,32 +19,20 @@ module.exports = {
     port: 9000,
     static: [path.resolve(__dirname, "public")],
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-    }),
-  ],
+  plugins: [new MiniCssExtractPlugin()],
   optimization: {
     minimize: true,
-    minimizer: [
-     `...`,
-      new CssMinimizerPlugin(),
-    ],
+    minimizer: [`...`, new CssMinimizerPlugin()],
   },
   module: {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [
-          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
-        ],
+        use: [devMode ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-        loader: "file-loader",
-        options: { name: "fonts/[name].[ext]" },
+        type: "asset/resource",
       },
     ],
   },
