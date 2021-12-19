@@ -9,6 +9,7 @@ new fullpage("#fullpage", {
   verticalCentered: false,
   licenseKey: "2r2oF0TJ-V2mGnzfR-R6EUUmgX-tSZEpvMO",
   sectionSelector: ".fpsection",
+  slidesNavigation: true,
 });
 
 fullpage_api.setAllowScrolling(true);

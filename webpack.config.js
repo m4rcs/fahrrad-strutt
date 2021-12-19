@@ -3,10 +3,8 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-const devMode = process.env.NODE_ENV !== "production";
-
 module.exports = {
-  mode: devMode ? "development" : "production",
+  mode: "production",
   entry: "./src/app.js",
   output: {
     filename: "app.js",
@@ -28,7 +26,7 @@ module.exports = {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [devMode ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
