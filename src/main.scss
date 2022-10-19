@@ -25,7 +25,7 @@ $navbar-breakpoint: $tablet;
 @import "npm:bulma/sass/elements/content.sass";
 @import "npm:bulma/sass/elements/table.sass";
 @import "npm:bulma/sass/elements/title.sass";
-@import "npm:bulma-block-list/src/block-list";
+@import "block-list.scss";
 
 // Own styles
 body {
