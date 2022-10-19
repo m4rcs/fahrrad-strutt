@@ -1,6 +1,3 @@
-// Import styles
-require("./style.scss");
-
 // Setup fullpage.js
 import fullpage from "fullpage.js/dist/fullpage.extensions.min";
 

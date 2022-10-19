@@ -1,31 +1,31 @@
 @charset "utf-8";
 // Fullpage css
-@import "~fullpage.js/dist/fullpage.css";
+@import "npm:fullpage.js/dist/fullpage.css";
 
 // Font for logo + text
-@import "~@fontsource/lato/index.css";
-@import "~@fontsource/rubik/index.css";
+@import "npm:@fontsource/lato/index.css";
+@import "npm:@fontsource/rubik/index.css";
 
 // Setup fontawesome
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+$fa-font-path: "npm:@fortawesome/fontawesome-free/webfonts";
+@import "npm:@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "npm:@fortawesome/fontawesome-free/scss/solid.scss";
 
 // Customize Bulma
 $hr-margin: 0;
-@import "~bulma/sass/utilities/_all.sass";
-@import "~bulma/sass/base/_all.sass";
-@import "~bulma/sass/helpers/_all.sass";
-@import "~bulma/sass/grid/columns";
+@import "npm:bulma/sass/utilities/_all.sass";
+@import "npm:bulma/sass/base/_all.sass";
+@import "npm:bulma/sass/helpers/_all.sass";
+@import "npm:bulma/sass/grid/columns.sass";
 
 // Change navbar breakpoint
 $navbar-breakpoint: $tablet;
-@import "~bulma/sass/components/navbar";
-@import "~bulma/sass/elements/button";
-@import "~bulma/sass/elements/content";
-@import "~bulma/sass/elements/table";
-@import "~bulma/sass/elements/title";
-@import "~bulma-block-list/src/block-list";
+@import "npm:bulma/sass/components/navbar.sass";
+@import "npm:bulma/sass/elements/button.sass";
+@import "npm:bulma/sass/elements/content.sass";
+@import "npm:bulma/sass/elements/table.sass";
+@import "npm:bulma/sass/elements/title.sass";
+@import "npm:bulma-block-list/src/block-list";
 
 // Own styles
 body {
