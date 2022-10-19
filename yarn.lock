@@ -1051,10 +1051,10 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-fullpage.js@^4.0.11:
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-4.0.11.tgz#a6679e1b66d55c5ca718f8b0fc8864a650a9145b"
-  integrity sha512-2YWG9mIfUqAPz8eFPHsSq/rMWT5xv+2C6dxQ6bljj1m31MgvhWNU3r+sa5+Ds35QThyrL3uo9RUPCxolp3SjuQ==
+fullpage.js@=4.0.10:
+  version "4.0.10"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-4.0.10.tgz#8e170421816322c4e6a40dc5c80b0ab50189d8fb"
+  integrity sha512-x76Q+lzhghCou9B+cs6UzZkUHQNxmQ/zJFgWYcjBcTAmRgxnMpDyFLgMhLAsO1+6LakkKuDfBVy8H84u299c1Q==
 
 get-port@^4.2.0:
   version "4.2.0"
