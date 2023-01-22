@@ -4,7 +4,8 @@
     "private": true,
     "source": "src/index.html",
     "devDependencies": {
-        "parcel": "^2.8.3"
+        "parcel": "^2.8.3",
+        "parcel-reporter-static-files-copy": "^1.5.0"
     },
     "dependencies": {
         "@fontsource/lato": "^4.5.10",
