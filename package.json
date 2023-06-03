@@ -4,14 +4,14 @@
     "private": true,
     "source": "src/index.html",
     "devDependencies": {
-        "parcel": "^2.8.3",
+        "parcel": "^2.9.1",
         "parcel-reporter-static-files-copy": "^1.5.0"
     },
     "dependencies": {
-        "@fontsource/lato": "^4.5.10",
-        "@fontsource/rubik": "^4.5.14",
+        "@fontsource/lato": "^5.0.2",
+        "@fontsource/rubik": "^5.0.2",
         "@fortawesome/fontawesome-free": "^6.4.0",
-        "@parcel/transformer-sass": "^2.8.3",
+        "@parcel/transformer-sass": "^2.9.1",
         "bulma": "^0.9.4",
         "fullpage.js": "=4.0.10"
     },
