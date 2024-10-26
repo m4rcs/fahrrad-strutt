@@ -71,21 +71,6 @@ span.button {
   margin: 1rem;
 }
 
-figure img {
-  -webkit-filter: grayscale(100%);
-  /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%);
-  /* FF 35+ */
-}
-
-figure img:hover {
-  transition: filter 0.5s ease-in-out;
-  -webkit-filter: grayscale(0%);
-  /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(0%);
-  /* FF 35+ */
-}
-
 .gallery {
   background-color: $grey-lighter;
   border-radius: $size-6;
