@@ -1,36 +1,41 @@
 @charset "utf-8";
-// Fullpage css
-@import "npm:fullpage.js/dist/fullpage.css";
+
+// Bulma
+@use "bulma/sass/utilities" as *;
+@use "bulma/sass/base" with (
+  $hr-margin: 0
+);
+@use "bulma/sass/components/navbar" with (
+  $navbar-breakpoint: $tablet
+);
+@forward "bulma/sass/elements/button";
+@forward "bulma/sass/elements/content";
+@forward "bulma/sass/elements/icon";
+@forward "bulma/sass/elements/table";
+@forward "bulma/sass/elements/title";
+@forward "bulma/sass/grid/columns";
+@forward "bulma/sass/helpers";
+@forward "bulma/sass/themes";
+
+// Bulma Block List
+@forward "bulma-block-list";
 
 // Font for logo + text
-@import "npm:@fontsource/lato/index.css";
-@import "npm:@fontsource/rubik/index.css";
-
-// Setup fontawesome
-$fa-font-path: "npm:@fortawesome/fontawesome-free/webfonts";
-@import "npm:@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "npm:@fortawesome/fontawesome-free/scss/solid.scss";
-
-// Customize Bulma
-$hr-margin: 0;
-@import "npm:bulma/sass/utilities/_all.sass";
-@import "npm:bulma/sass/base/_all.sass";
-@import "npm:bulma/sass/helpers/_all.sass";
-@import "npm:bulma/sass/grid/columns.sass";
-
-// Change navbar breakpoint
-$navbar-breakpoint: $tablet;
-@import "npm:bulma/sass/components/navbar.sass";
-@import "npm:bulma/sass/elements/button.sass";
-@import "npm:bulma/sass/elements/content.sass";
-@import "npm:bulma/sass/elements/table.sass";
-@import "npm:bulma/sass/elements/title.sass";
-@import "block-list.scss";
+@forward "@fontsource/lato/latin-400.css";
+@forward "@fontsource/rubik/latin-400.css";
 
 // Own styles
 body {
-  margin: $size-7 !important;
   font-family: "Rubik", sans-serif;
+  margin: 0 $size-7;
+}
+
+.columns {
+  margin-bottom: 0 !important;
+}
+
+.column {
+  padding-bottom: 0;
 }
 
 // Font for heading
@@ -91,7 +96,7 @@ span.button {
 }
 
 .icon-menu {
-  max-width: 16px;
+  max-width: 1em;
   -webkit-filter: grayscale(100%);
   /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(100%);
