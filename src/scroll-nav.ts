@@ -45,7 +45,7 @@ class ScrollNav {
 
   private setupStyles(): void {
     // Calculate available height minus navbar
-    const navbar = document.querySelector('.navbar') as HTMLElement;
+    const navbar = document.querySelector(".navbar") as HTMLElement;
     const navbarHeight = navbar ? navbar.offsetHeight : 0;
     const availableHeight = `calc(100vh - ${navbarHeight}px)`;
 

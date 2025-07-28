@@ -14,13 +14,16 @@
     "sass": "1.89.2",
     "terser": "5.43.1",
     "typescript": "5.8.3",
-    "vite": "7.0.5"
+    "vite": "7.0.6"
   },
   "dependencies": {
     "@fontsource/lato": "5.2.6",
     "@fontsource/rubik": "5.2.6",
     "bulma": "1.0.4",
     "bulma-block-list": "1.1.0",
-    "lucide": "0.525.0"
-  }
+    "lucide": "0.532.0"
+  },
+  "trustedDependencies": [
+    "@parcel/watcher"
+  ]
 }
