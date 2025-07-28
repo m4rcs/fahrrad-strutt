@@ -1,13 +1,13 @@
 !function(){const t=document.createElement("link").relList;if(!(t&&t.supports&&t.supports("modulepreload"))){for(const t of document.querySelectorAll('link[rel="modulepreload"]'))e(t);new MutationObserver(t=>{for(const o of t)if("childList"===o.type)for(const t of o.addedNodes)"LINK"===t.tagName&&"modulepreload"===t.rel&&e(t)}).observe(document,{childList:!0,subtree:!0})}function e(t){if(t.ep)return;t.ep=!0;const e=function(t){const e={};return t.integrity&&(e.integrity=t.integrity),t.referrerPolicy&&(e.referrerPolicy=t.referrerPolicy),"use-credentials"===t.crossOrigin?e.credentials="include":"anonymous"===t.crossOrigin?e.credentials="omit":e.credentials="same-origin",e}(t);fetch(t.href,e)}}();
 /**
- * @license lucide v0.525.0 - ISC
+ * @license lucide v0.532.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
 const t={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":2,"stroke-linecap":"round","stroke-linejoin":"round"},e=([t,o,n])=>{const i=document.createElementNS("http://www.w3.org/2000/svg",t);return Object.keys(o).forEach(t=>{i.setAttribute(t,String(o[t]))}),n?.length&&n.forEach(t=>{const o=e(t);i.appendChild(o)}),i},o=t=>"string"==typeof t?t:t&&t.class?t.class&&"string"==typeof t.class?t.class.split(" "):t.class&&Array.isArray(t.class)?t.class:"":"",n=(n,{nameAttr:i,icons:s,attrs:r})=>{const c=n.getAttribute(i);if(null==c)return;const a=s[c.replace(/(\w)(\w*)(_|-|\s*)/g,(t,e,o)=>e.toUpperCase()+o.toLowerCase())];if(!a)return console.warn(`${n.outerHTML} icon name was not found in the provided icons object.`);const l=(t=>Array.from(t.attributes).reduce((t,e)=>(t[e.name]=e.value,t),{}))(n),h={...t,"data-lucide":c,...r,...l},d=["lucide",`lucide-${c}`,l,r].flatMap(o).map(t=>t.trim()).filter(Boolean).filter((t,e,o)=>o.indexOf(t)===e).join(" ");d&&Object.assign(h,{class:d});const u=((o,n={})=>{const i={...t,...n};return e(["svg",i,o])})(a,h);return n.parentNode?.replaceChild(u,n)};
 /**
- * @license lucide v0.525.0 - ISC
+ * @license lucide v0.532.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
